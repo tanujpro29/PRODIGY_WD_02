@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 40%;
+  min-width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #27373b;
+  padding-bottom: 60px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+
+.timer-disply {
+  width: 100%;
+  background: #9e9e9e;
+  padding: 40px 0;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  border-radius: 10px 10px 0 0;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.laps {
+  text-align: center;
+  color: #fff;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.action {
+  width: 85%;
+  margin: 60px auto 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.action > button {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #141313;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+button:hover {
+  background-color: #141313;
+  color: #fff;
+  border: 3px solid #b6b6b6;
+  padding: 7px 17px;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+
+  .timer-disply {
+    font-size: 2rem;
+    padding: 15px 0;
+  }
+
+  .action {
+    grid-template-columns: 1fr;
+  }
+}
